@@ -13,7 +13,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 
 
 
-
+set noh
 set relativenumber
 
 map j gj
