@@ -1,0 +1,5 @@
+src.color = 3
+eco ayu
+e asm.cmt.right=true
+#e asm.pseudo = true 
+e scr.utf8 = true
