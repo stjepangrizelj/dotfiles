@@ -25,4 +25,7 @@ set shiftwidth=2
 set number relativenumber
 set title
 set noruler
+
+" Perform dot commands over visual blocks:
+	vnoremap . :normal .<CR>
 set fillchars=eob:\ ,
