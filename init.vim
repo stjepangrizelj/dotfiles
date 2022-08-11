@@ -10,6 +10,9 @@
   call plug#end()
 
 
+"Neovide
+  set guifont=Ligconsolata:h11
+
 "General
   "General? (idk what to name this)
     set nocompatible
@@ -23,6 +26,9 @@
     set laststatus=0
     set noshowcmd
     set fillchars=eob:\ ,
+
+  "Terminal preferences
+    tnoremap <Esc> <C-\><C-n>
 
   "Mappings
     map j gj
