@@ -7,7 +7,6 @@
     Plug 'junegunn/goyo.vim'
     Plug 'preservim/nerdtree'
     Plug 'ggandor/lightspeed.nvim'
-    Plug 'vlime/vlime', {'rtp': 'vim/'}
   call plug#end()
 
 
