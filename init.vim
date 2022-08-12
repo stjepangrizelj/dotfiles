@@ -10,6 +10,12 @@
   call plug#end()
 
 
+"Python provider
+"if g:os_current == "Linux"
+"  let g:python3_host_prog = "usr/bin/python3"
+"endif
+
+
 "Neovide
   set guifont=Ligconsolata:h11
 
@@ -26,6 +32,8 @@
     set laststatus=0
     set noshowcmd
     set fillchars=eob:\ ,
+    set mouse=n
+
 
   "Terminal preferences
     tnoremap <Esc> <C-\><C-n>
