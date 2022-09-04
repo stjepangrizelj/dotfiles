@@ -1,5 +1,11 @@
+. $HOME/.asdf/asdf.sh
+
+path+=("/home/stjepan/.local/bin")
+
 alias alert='notify-send'
 alias bc='bc -ql'
+alias code='vscode & disown'
+alias dmenu='dmenu -fn "terminus"' #Sometimes default terminal font doesn't nicely with dmenu
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
