@@ -7,6 +7,10 @@
     Plug 'junegunn/goyo.vim'
     Plug 'preservim/nerdtree'
     Plug 'ggandor/lightspeed.nvim'
+    Plug 'vlime/vlime', {'rtp': 'vim/'}
+    Plug 'lervag/vimtex'
+    Plug 'neoclide/coc.nvim',{'branch': 'release'}
+    Plug 'maxmellon/vim-jsx-pretty'
   call plug#end()
 
 
@@ -23,7 +27,7 @@
   "General? (idk what to name this)
     set nocompatible
     filetype plugin on
-    syntax on
+    syntax enable
     set number relativenumber
     set title
     set encoding=utf-8
@@ -37,6 +41,10 @@
 
   "Terminal preferences
     tnoremap <Esc> <C-\><C-n>
+
+  "Coc.nvim
+    "This makes coc.nvim autocomplete on <cr> (enter)
+    inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
   "Mappings
     map j gj
@@ -87,3 +95,7 @@
     autocmd BufWritePre * %s/\s\+$//e
     autocmd BufWritePre * %s/\n\+\%$//e
     autocmd BufWritePre *.[ch] %s/\%$/\r/e
+
+
+  "Vimtex settings
+    let g:vimtex_view_method = 'okular'
