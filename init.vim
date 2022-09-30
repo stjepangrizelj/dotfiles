@@ -50,7 +50,16 @@
     map j gj
     map k gk
     vnoremap . :normal .<CR>
+    "Deletion settings
+      nnoremap d "_d
+      vnoremap d "_d
 
+      nnoremap D "_D
+      vnoremap D "_D
+
+      nnoremap x "_x
+      nnoremap X "_X
+      
   "TAB settings
     set expandtab
     set tabstop=2
